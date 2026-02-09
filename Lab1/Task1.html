@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML tags demonstration file">
+    <meta name="keywords" content="HTML, Tags, Demo">
+    <meta name="author" content="You">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Playground</title>
+
+    <base href="https://example.com/" target="_blank">
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        section { margin-bottom: 40px; }
+        mark { background-color: yellow; }
+    </style>
+
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Tags Demonstration for Lab Task </h1>
+    <p>This file showcases <strong>many HTML tags</strong> in one place.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#tables">Tables</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="text">
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <p>This is a <b>bold</b>, <i>italic</i>, <u>underlined</u>, <mark>marked</mark>,
+       <small>small</small>, <del>deleted</del>, <ins>inserted</ins> text.</p>
+
+    <p>Superscript: x<sup>2</sup> &nbsp; Subscript: H<sub>2</sub>O</p>
+
+    <blockquote cite="https://example.com">
+        This is a blockquote element.
+    </blockquote>
+
+    <q>This is an inline quote</q>
+
+    <pre>
+function hello() {
+    console.log("Hello World");
+}
+    </pre>
+
+    <code>console.log("Inline code");</code>
+
+    <abbr title="HyperText Markup Language">HTML</abbr>
+
+    <address>
+        Written by <a href="mailto:test@example.com">Someone</a><br>
+        Somewhere on Earth
+    </address>
+
+    <time datetime="2026-01-27">27 January 2026</time>
+</section>
+
+<section id="lists">
+    <h2>Lists</h2>
+
+    <ul>
+        <li>Unordered</li>
+        <li>List</li>
+    </ul>
+
+    <ol>
+        <li>Ordered</li>
+        <li>List</li>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Markup Language</dd>
+    </dl>
+</section>
+
+<section id="media">
+    <h2>Media</h2>
+
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+
+    <figure>
+        <img src="https://via.placeholder.com/100" alt="Figure Image">
+        <figcaption>Figure Caption</figcaption>
+    </figure>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <video controls width="300">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <iframe src="https://example.com" width="300" height="150"></iframe>
+</section>
+
+<section id="tables">
+    <h2>Tables</h2>
+
+    <table border="1">
+        <caption>Sample Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">End</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section id="forms">
+    <h2>Forms</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>User Info</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email">
+
+            <br><br>
+
+            <label>Password:</label>
+            <input type="password">
+
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+
+            <br><br>
+
+            <label>Skills:</label>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+
+            <br><br>
+
+            <label>Country:</label>
+            <select>
+                <optgroup label="Asia">
+                    <option>Pakistan</option>
+                    <option>India</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <textarea rows="4" cols="30">Write something...</textarea>
+
+            <br><br>
+
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+
+    <progress value="70" max="100"></progress>
+    <meter value="0.6"></meter>
+</section>
+
+<section id="semantic">
+    <h2>Semantic & Misc</h2>
+
+    <details>
+        <summary>Click to expand</summary>
+        Hidden details content.
+    </details>
+
+    <dialog open>This is a dialog</dialog>
+
+    <canvas width="200" height="100" style="border:1px solid black;"></canvas>
+
+    <template>
+        <p>This is a template</p>
+    </template>
+</section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 HTML Demo</p>
+</footer>
+
+</body>
+</html>
