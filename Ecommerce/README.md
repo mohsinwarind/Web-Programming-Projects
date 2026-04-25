@@ -152,7 +152,7 @@ Access the application at: **http://localhost:8000**
 
 ---
 
-## 🔐 Test Credentials
+##  Test Credentials
 
 ### Admin Account
 - **Email:** admin@example.com
